@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reutilización</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	color: #FFF;
+	font-size: xx-large;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .footer p {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+.container .content blockquote h1 {
+	color: #030;
+	text-shadow: 1px 1px 1px #060;
+}
+.container .content blockquote #MenuBar1 li .MenuBarSubmenuVisible li a {
+	color: #FFF;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Agua</a>
+          <ul>
+            <li><a href="Porabilización.html">Potabilizaci&oacute;n</a></li>
+            <li><a href="Potabilización Movi.html">Potabilizaci&oacute;n Movil</a></li>
+            <li><a href="Depuración.html">Depuraci&oacute;n</a></li>
+            <li><a href="Aguas Grises.html">Aguas Grises</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Tratamiento Ultravioleta</h1>
+      <p><img src="../Imagenes/reutilizacioncover.jpg" width="850" height="181"></p>
+      <p>Distintos patógenos están presentes en el agua de riego (bacterias, virus, nemátodos) y son causantes de distintas enfermedades muy graves en personas humanas así como animales y vegetales, la desinfección está recomendada para prevenir su transmisión y dispersión a través de este medio.      </p>
+      <p>Nuestro departamento técnico le puede ofrecer la mejor solución para poder reutilizar el drenaje de su cultivo sin suelo, reutilizar aguas residuales de procesos humanos e industriales, evitar los problemas de transmisión de enfermedades vía agua de riego, adecuar sanitariamente el agua para su utilización en procesos de lavado de frutas y hortalizas, uso sanitario, etc.
+&nbsp;      </p>
+      <p><img src="../Imagenes/ULTRAVIOLETA.jpg" width="550" height="350"></p>
+      <p>Es un eficaz sistema de desinfección del agua de riego basado en el principio físico germicida de la radiación ultravioleta (UV-C).  Un preciso dimensionado del proceso permite tratar desde bacterias y nemátodos, hasta virus, con una completa efectividad.<br>
+      </p>
+      <p>Su uso está recomendado para la reutilización del agua de drenaje y la potabilización para consumo humano.</p>
+      <h3>El sistema dispone de los siguientes elementos:</h3>
+      <ul>
+        <li>Filtrado de baja velocidad mediante lecho de arena.</li>
+        <li>Cámara con lámpara de radiación UV de baja presión.</li>
+        <li>Sensor de intensidad de radiación UV.</li>
+        <li>Sistema de limpieza de la lámpara con equipo de dosificación de ácido.</li>
+        <li>Circuito para control de la producción y limpieza de la lámpara de UV.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h1>Tratamiento por Ozono</h1>
+      <p><img src="../Imagenes/ozono-cultivo-tomate.png" width="850" height="250"></p>
+      <h3>El desinfectante más eficaz y potente después del fluor.</h3>
+      <p>Destruye e inactiva las enzimas de los microorganismos, oxida la pared celular rompiéndola y atacando los ácidos nucleicos ADN y ARN, y esa es la razón de su poder bactericida. Hay que producirlo insitu. Actúa rápido y eficazmente.</p>
+      <h3><br>
+        Qué es el OZONO</h3>
+      <p>El ozono es una variedad alotrópica del oxigeno, su molécula triatomica O3 genera por la activación de la molecúla diatomica O2 del oxigeno. La inyección del Ozono en el agua se realiza por aspiración a través de un venturi, y su inyección en un reactor o cámara de mezcla durante el tiempo necesario para la acción oxidante.      </p>
+      <p><img src="../Imagenes/ozono-planta-tratamiento.jpg" width="800" height="350"></p>
+      <h3>Tratamiento por Ozono</h3>
+      <p>El ozono (O3) se produce tras la recombinación de átomos de oxígeno disociados de su estado original (molécula O2) con otras moléculas de oxígeno, obteniéndose así un gas inestable que se utiliza por su elevado poder oxidante para la desinfección de aguas, aire y espacios cerrados. Un adecuado sistema de monitorización de la producción, dosificación, dispersión y reacción, permiten una desinfección altamente eficaz contra todo tipo de microorganismos y virus.      </p>
+      <h3>Ventajas del Tratamiento SMAQUA Ozono en Agricultura</h3>
+      <ul>
+        <li>Raíces más fuertes y sanas.</li>
+        <li>Plantas más vigorosas.</li>
+        <li>Alargamiento del ciclo de cultivo.</li>
+        <li>Potencia el crecimiento y da precicidad al cultivo.</li>
+        <li>Incremento de la cantidad de azúcares.</li>
+        <li>Incremento de producciones y calidad de frutos.</li>
+        <li>Acción germicida directa sobre hongos, bacterias y virus. </li>
+      </ul>
+      <h3><br>
+        Componentes de una Planta de OZONO</h3>
+      <p>El equipo de fabricación complacta SMAQUA Ozono dispone de los siguientes elementos:</p>
+      <ul>
+        <li><strong>Generador de ozono</strong>, el fundamento de la producción se obtiene mediante la descarga de corriente en un reactor a alto voltaje, conformado por placas dieléctricas de descarga a través de las que circula el gas que suministra el oxígeno.</li>
+        <li><strong>Inyector de Ozono: </strong>Dosificación con inyectores o bombas soplantes con difusores.</li>
+        <li><strong>Tanque de reacción.</strong></li>
+        <li><strong>Bomba de recirculación.</strong></li>
+        <li><strong>Sistema de monitoreo</strong> de la dosificación, controlador ORP, alarmas, tiempo de funcionamiento, etc.</li>
+        <li><strong>Filtrado de baja velocidad </strong>mediante lecho de arena con contralavado</li>
+        <li><strong>Filtrado del aire de alimentación</strong> (caso de utilización de aire atmosférico como fuente de oxígeno).</li>
+      </ul>
+      <h3><br>
+        Aplicación del Tratamiento de OZONO</h3>
+      <ul>
+        <li>Desinfección de agua de drenaje en <strong>cultivos hidropónicos.</strong></li>
+        <li><strong>Desinfección de agua de riego.</strong></li>
+        <li>Ozonización del agua de<strong> riego por goteo.</strong></li>
+        <li>Tratamiento de las algas de<strong> embalses.</strong></li>
+        <li>Ozono-solarización en suelo de<strong> invernaderos.</strong>      </li>
+      </ul>
+      <p>&nbsp;</p>
+      <h1>Equipos de Cloración</h1>
+      <p><img src="../Imagenes/P1010093.JPG" width="500" height="266"></p>
+      <p>La utilización de cloro como tratamiento de desinfección del agua es el método más ampliamente empleado por su tradición y coste.</p>
+      <p>El hecho de disponer de un remanente posterior al tratamiento inicial posibilita contar con un indicador de un correcto tratamiento y con un medio de prolongar la efectividad del mismo.</p>
+      <p>Un simple monitoreo mediante una determinación colorimétrica, permite la fácil determinación de la presencia de cloro libre en el agua.    </p>
+    </blockquote>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

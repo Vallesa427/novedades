@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calefacción</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	font-size: xx-large;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .footer p {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .content blockquote #MenuBar1 li .MenuBarSubmenuVisible li a {
+	color: #F00;
+}
+.container .content blockquote #MenuBar1 li .MenuBarSubmenuVisible li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Climatizaci&oacute;n</a>
+          <ul>
+            <li><a href="controlador climatico.html">Controlador Climatico</a></li>
+            <li><a href="Ventilación.html">Ventilaci&oacute;n</a></li>
+            <li><a href="Huminificación.html">Humidificaci&oacute;n</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Calefacción por Agua</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/portadacalefagua.jpg" width="850" height="250"></p>
+      <h3>Sistemas de calefacción:</h3>
+      <p>La mayoría de los cultivos intensivos en invernadero tienen ciclos que concurren durante la estación fría, un descenso en la temperatura de los cultivos por debajo del mínimo óptimo provoca distintos desórdenes fisiológicos, fisiopatías, parada vegetativa, etc. Por otro lado, la advección de heladas con temperaturas bajas extremas con la suficiente duración pueden producir la muerte del cultivo o la pérdida completa de la cosecha.</p>
+      <p>Nuestro departamento técnico le puede ofrecer, tras un adecuado estudio, la mejor solución para poder instalar su sistema de calefacción con la potencia adecuada y con los elementos indispensables para un correcto funcionamiento.      </p>
+      <h3>Sistema de calefacción central (agua caliente):</h3>
+      <p>Los sistemas de calefacción central son recomendados en localizaciones con temperaturas mínimas exteriores bajas donde se precisan diferenciales de temperatura entre el interior y el exterior elevados, con cultivos que presentan una temperatura mínima óptima exigente, y en proyectos donde se pretende llevar a cabo la explotación con una elevada productividad y con un grado de tecnificación elevado.</p>
+      <p>En muchos casos la instalación está integrada como parte del sistema cultural del invernadero, sirviendo por ejemplo las redes de calefacción como base del sistema de raíles de carros de laboreo entre las líneas de cultivo, trasporte de la cosecha, movilización de maquinaria, etc., y en otros tantos casos como herramienta de manejo en el control de la transpiración y la humedad ambiente, control de enfermedades, etc.      </p>
+      <p><img src="../Imagenes/3clim003_g.jpg" width="474" height="275"></p>
+      <p>En generadores de elevada potencia se emplean equipos con tres pasos de humos, con grandes superficies de caldeo y volúmenes de agua que permiten emplear los gases de la combustión como fuente de fertilización carbónica de los cultivos.      </p>
+      <p><img src="../Imagenes/calefaccionagua1.jpg" width="470" height="233"></p>
+      <p>La instalación entonces dispone de un doble uso, y otros sistemas como depósitos de acumulación de agua caliente, sistemas de expansión, condensadores o recuperadores de humos conforman un único conjunto. </p>
+      <p>&nbsp;</p>
+      <h1>Calefacción por Aire</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/Calefaccionaireportada.jpg" width="850" height="250"></p>
+      <h3><strong>Sistemas de calefacción:</strong></h3>
+      <p>La mayoría de los cultivos intensivos en invernadero tienen ciclos que concurren durante la estación fría, un descenso en la temperatura de los cultivos por debajo del mínimo óptimo provoca distintos desórdenes fisiológicos, fisiopatías, parada vegetativa, etc. Por otro lado, la advección de heladas con temperaturas bajas extremas con la suficiente duración pueden producir la muerte del cultivo o la pérdida completa de la cosecha.</p>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/esquema_aire.jpg" width="480" height="127"></p>
+      <h3>Sistema de calefacción con generadores de aire caliente:</h3>
+      <p>Los sistemas de calefacción con generadores de aire caliente son sistemas recomendados en localizaciones con temperaturas mínimas exteriores suaves, con cultivos que presentan una temperatura mínima óptima no muy exigente, o para proyectos donde se pretende acometer una mejora en la explotación mediante una mayor precocidad y productividad del cultivo en fechas frías con un grado de tecnificación medio.</p>
+      <p>También son una solución adecuada en proyectos donde se precisa disponer de un equipamiento únicamente para su operación como seguridad frente a las heladas.      </p>
+      <p><img src="../Imagenes/Calefactoraire1.jpg" width="450" height="250"></p>
+      <p>El funcionamiento de un generador de aire caliente, consiste en la generación de calor a partir de un determinado combustible en un hogar, parte integrante de un intercambiador aire – aire.</p>
+      <p>El combustible se quema en el hogar con la ayuda de un quemador atmosférico o presurizado según el modelo. En el lado secundario del intercambiador el calor es evacuado en el aire del invernadero con la ayuda de un ventilador normalmente helicoidal.</p>
+      <p><img src="../Imagenes/calef2.jpg" width="400" height="250"></p>
+      <p>Un adecuado número y disposición de los generadores, junto con un adecuado caudal de aire y dardo de alcance de los ventiladores, permite una distribución adecuada del aire caliente en todo el volumen del invernadero.</p>
+      <p><img src="../Imagenes/calef3.jpg" width="850" height="250"></p>
+    </blockquote>
+  </div>
+  <div class="footer">
+    <p>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
