@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bombas</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	font-size: xx-large;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .footer p {
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Materiales de Riego</a>
+          <ul>
+            <li><a href="Cabezales.html">Cabezales</a></li>
+            <li><a href="Filtros.html">Filtros</a></li>
+            <li><a href="Tubos.html">Tubos</a></li>
+<li><a href="Microaspersores.html">Microaspersores</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Bomba de Riego</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/bombas-riego.jpg" width="850" height="250"></p>
+      <h3>Factores para su instalación: </h3>
+      <p>Los componentes que se instalan en un cabezal de riego dependen de los siguientes factores:</p>
+      <ul>
+        <li><strong>De la superficie de riego:</strong> dependiendo de la superficie las necesidades de caudal cambian, de manera que la selección del equipo de bombeo dependen del tamaño de la explotación y de la orografía del terreno.</li>
+        <li><strong>De las condiciones de la fuente de agua para el riego:</strong> dependiendo de la procedencia y las condiciones que presenta el agua se elegirá el tipo de filtrado que necesite e incluso si el agua viene con presión suficiente puede no ser necesaria la instalación de bombeo.</li>
+        <li><strong>Del tipo de riego y fertilización</strong>: dependiendo del tipo de riego que se realice y de si se efectúan operaciones de fertirrigación se diseñará el sistema de abonado.</li>
+        <li><strong>De las necesidades del agricultor</strong>: dependiendo del grado de automatización que precisen tanto los equipos como las condiciones que solicite el agricultor o el técnico de la explotación se automatizará el cabezal de riego.</li>
+      </ul>
+      <p>Puede requerirse un simple temporizador o un equipo completo de fertirrigación para el control del riego, o que se precise la instalación de equipos de filtrado automático o manual.        </p>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/bombas-de-riego.jpg" width="500" height="250"></p>
+      <div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>Se clasifican también en función de la altura de aspiración que tienen. La altura de aspiración es la cota a la que se instala la bomba por encima de la boca de la tubería aspiración de agua. Así se distinguen:</p>
+          <ul>
+            <li><strong>Bombas sumergibles</strong>: se utilizan cuando en los embalses de riego para eliminar los problemas de aspiración cuando la altura de aspiración es elevada. Se instalan bien en la superficie del embalse mediante el uso de flotadores o en una cámara de aspiración anexa que se llena por el principio de los vasos comunicantes.</li>
+            <li><strong>Bombas no sumergibles:</strong> se colocan en la superficie del terreno y se utilizan cuando la altura de aspiración es baja o directamente no hay porque la bomba se instala a una altura menor a la boca de la tubería de aspiración.</li>
+          </ul>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>Estas bombas a su vez se clasifican por la posición del eje de accionamiento, distinguiendo:</p>
+      <ul>
+        <li><strong>Bombas horizontales:</strong> se emplean para suministrar elevados caudales y bajas presiones. Son las bombas más usuales que se instalan en los cabezales de riego.</li>
+        <li><strong>Bombas verticales:</strong> suministran elevadas presiones.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>Variador de Frecuencia</h3>
+      <p>El variador de frecuencia es un sistema para el control de la velocidad rotacional de un motor de corriente alterna (AC) por medio del control de la frecuencia de alimentación suministrada al motor de la electrobomba. Es decir, un variador de frecuencia es un caso especial de un variador de velocidad.</p>
+      <h4>Instalación</h4>
+      <p>La instalación de variadores de frecuencia para el control de la bomba tiene dos objetivos:</p>
+      <ul>
+        <li>El arranque y parada pausados de la bomba para evitar grandes sobrepresiones en el inicio del riego que puedan provocar situaciones de golpe de ariete en las tuberías. Además, al evitar el arranque a tensión plena del motor se evita el consumo tan elevado que se produce al inicio del riego.</li>
+        <li>El cambio de caudal en función de las necesidades de diferentes sectores de riego.      </li>
+      </ul>
+    </blockquote>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
