@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pantallas</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+	font-family: "Times New Roman", Times, serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	font-family: "Times New Roman", Times, serif;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content blockquote p {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h1 {
+	font-family: "Times New Roman", Times, serif;
+	color: #060;
+}
+.container .content blockquote h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h3 {
+	color: #00F;
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote ul li strong {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .footer p {
+	color: #FFF;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Estructuras y Materiales</a>
+          <ul>
+            <li><a href="Estructuras.html">Estructuras</a></li>
+            <li><a href="Arcos.html">Arcos</a></li>
+<li><a href="Mallas.html">Mallas</a></li>
+            <li><a href="Materiales.html">Materiales</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Pantallas para Invernaderos</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/portadapantallas.jpg" width="850" height="250"></p>
+      <p>Las pantallas instaladas por <strong>Novedades Agrícolas</strong> permiten un correcto control de la luz, la temperatura y la humedad, que se traduce en una mejora considerable del <strong>control del clima</strong>.</p>
+      <p>Estas pantallas, al ser móviles, se pueden abrir y cerrar voluntariamente según las condiciones metereológicas externas y las necesidades del cultivo. Se pueden instalar en cualquier tipo de invernadero y de clima.</p>
+      <p>Las pantallas térmicas son telas formadas por una combinación de tejidos de poliéster dotados de una fina capa de aluminio entretejido con hilo de acril absorbente. Equilibran la temperatura ambiente de los invernaderos manteniendo los niveles más óptimos para el cultivo.</p>
+      <p>El sistema aprovecha la energía solar para retener calor en las estaciones más frías. Esto supone un importante <strong>ahorro energético</strong>.      </p>
+      <h3>Tipos de Pantallas Termicas      </h3>
+      <ul>
+        <li><strong>Pantallas de interior:</strong> para invernaderos, aunque también se pueden aplicar en granjas, recintos públicos (ferias, restaurantes, terrazas, etc.). Abiertas, cerradas o enrollables.</li>
+        <li><strong>Pantallas de exterior:</strong> para cultivos que necesitan aireación y que deben protegerse de las circunstancias climáticas adversas. También sirven para recintos deportivos, piscinas, etc. Abiertas, cerradas o enrollables.</li>
+        <li><strong>Pantallas de fotoperiodo:</strong> para techos y laterales.</li>
+        <li><strong>Pantallas de techo abierto a 90 %:</strong> permiten alternar el invernadero y el aire libre a voluntad.</li>
+      </ul>
+      <h6>&nbsp;</h6>
+      <h3>Las ventajas del uso de instalaciones de pantalla térmica:</h3>
+      <ul>
+        <li>Control de humedad</li>
+        <li>Control de luminosidad.</li>
+        <li>Control de temperatura.</li>
+        <li>Ahorro de combustible en calefacción.</li>
+        <li>Control y menor gasto en agua de riego.</li>
+        <li>Control y reducción de enfermedades criptogámicas, recintos deportivos (campos de fútbol, tenis, piscinas, etc.).</li>
+      </ul>
+      <h3>&nbsp;</h3>
+      <h3>Pantallas de ahorro energético:</h3>
+      <p>Son pantallas transparente diseñadas para retener la máxima cantidad de calor con una pérdida mínima de iluminación. Son ideales para la producción de cultivos vegetales en climas más fríos.</p>
+      <h3>Pantallas de ahorro energético y reflexión solar:</h3>
+      <p>Son pantallas que ofrecen un determinado nivel de sombra en función del modelo, ya que refleja hacia el exterior la energía solar no deseada por el cultivo. Cuando se cierra por la noche las pantallas mantienen el calor.</p>
+      <p>Cuanto mayor es el contenido del aluminio mayor es la sombra creada y mayor es el ahorro de energía.</p>
+      <h3>Pantallas de sombreo:</h3>
+      <h4><strong>Pantallas de sombreo interior:</strong> </h4>
+      <p>Son pantallas que constan de tira de película de poliéster, tiras de aluminio y filamentos para la sujeción de la estructura. Las tiras de aluminio reflejan más del 90% de la radiación solar. El número de tiras de aluminio determina la eficacia del sombreado y la capacidad de ventilación de la pantalla ya que el aire caliente fluye a través de las bandas de aluminio. Con las pantallas de sombreo se consigue reducir la radiación y las altas temperaturas durante el día. Durante la noche, refleja la radiación de onda larga de las plantas hacia el interior.</p>
+      <h4><strong>Pantallas de sombreo exterior:</strong> </h4>
+      <p>Son pantallas para proteger los cultivos contra la aparición directa de elementos tales como la alta radiación solar, el viento y el granizo. Los sistemas de sombreado exteriores se pueden instalar fijos o retráctiles. Los retráctiles proporcionan una sombra móvil. Estas <strong>pantallas</strong> están reforzadas por un fuerte alambre plástico que le fija al sistema.    </p>
+    </blockquote>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

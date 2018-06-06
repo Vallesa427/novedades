@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arcos</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	font-family: "Times New Roman", Times, serif;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content blockquote p {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+.container .content blockquote ul li {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .footer p {
+	color: #FFF;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Estructuras y Materiales</a>
+          <ul>
+            <li><a href="Estructuras.html">Estructuras</a></li>
+<li><a href="Mallas.html">Mallas</a></li>
+            <li><a href="Pantallas.html">Pantallas</a></li>
+            <li><a href="Materiales.html">Materiales</a></li>
+          </ul>
+        </li>
+</ul>
+      <blockquote>
+        <h1>&nbsp;</h1>
+      </blockquote>
+    <h1>Arcos de Invernaderos</h1>
+    <p><img src="../Imagenes/Imagenes (Invernaderos)/arcos-Invernaderos.jpg" width="850" height="250"></p>
+    <p>Cuando hablamos de arcos de invernaderos, nos referimos a los invernaderos tipo &ldquo;<strong>Multicapilla</strong>&rdquo;, ya que otro tipo de tipo de invernaderos su estructura de cubierta es plana y no en forma de arco. La forma del arco, es la que define el tipo de invernadero.</p>
+    <p>El arco, realmente es la parte superior de la cercha pero algunas veces nos referimos a la cercha con el nombre de arco.      </p>
+    <p>El arco es la parte de la estructura sobre la que se posa el material de cubierta, que mayoritariamente es plástico.</p>
+    <div></div>
+    <br>
+    <h2>Tipos de Arcos de Invernaderos</h2>
+    <h3>Arcosemicircular</h3>
+    <p><img src="../Imagenes/Imagenes (Invernaderos)/1-arcosemicircular.jpg" width="550" height="153"></p>
+    <ul>
+      <li>La cubierta redondeada supones una mayor capacidad de captación de la radiación solar que en las cubiertas planas a dos aguas.</li>
+      <li>Evacuan mejor el condensado que aparece en la cubierta y albergan un mayor volumen de aire que las cubiertas anteriores</li>
+    </ul>
+    
+      <p>&nbsp;</p>
+      <h3>Arco Asimétrico</h3>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/2-arcoasimetrico.jpg" width="550" height="170"></p>
+      <p>Su objetivo radica en mejorar la <strong>transmisión de luz</strong>, orientándolos debidamente hacia la posición cenital de sol.</p>
+      <p>Durante los meses de invierno, los <strong>Invernaderos Asimétricos</strong> presentan una distribución espacial de la <strong>radiación</strong> más uniforme que los invernaderos con techo plano, inducen un aumento de la radiación interceptada de un 5-6 % (asimétricos con menor pendiente al sur) de un 10 % (asimétricos con mayor pendiente al sur).</p>
+      <p>También presenta una <strong>mayor resistencia a las inclemencias climatológicas</strong>, fundamentalmente en el caso de <strong>vientos fuertes</strong> cuando ya que permiten una exposición menor a este desde un lado que desde el otro cuando los invernaderos están orientados debidamente.      </p>
+      <h3>Arco en Punta (Ojival tico)</h3>
+      <ul>
+        <li>Su objetivo es mejorar la transmisión de luz con respecto a los arcos semicirculares, ya que tienen mayor capacidad de interceptación de la luz solar.</li>
+        <li>Además su forma les permite alojar un mayor volumen de aire y evacuan mejor el condensado de la cubierta.    </li>
+      </ul>
+    </blockquote>
+  <!-- end .content --></div>
+  <div class="footer">
+    <p>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+  </div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
