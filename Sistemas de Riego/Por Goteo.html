@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Riego por goteo</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-size: xx-large;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.footer1 {
+	padding: 10px 0;
+	color: #FFF;
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+.a {
+	font-weight: bold;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Sistemas de Riego</a>
+          <ul>
+            <li><a href="Por aspersión.html">Por Aspersi&oacute;n</a></li>
+            <li><a href="Automático.html">Autom&aacute;tico</a></li>
+            <li><a href="Hidroponicos.html">Hidrop&oacute;nicos</a></li>
+            <li><a href="Microaspersiones.html">Microaspersiones</a></li>
+            <li><a href="Nebulización.html">Nebulizaci&oacute;n</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Riego por Goteo</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/Goteo Riego.jpg" width="850" height="250"></p>
+      <p>De forma muy general, se puede definir el <strong>Riego por Goteo</strong> como <em>Riego Localizado</em>. El riego por goteo o riego gota a gota es un método de irrigación que permite una óptima aplicación de agua y abonos en los sistemas agrícolas de las zonas áridas. El agua aplicada se infiltra en el suelo irrigando directamente la zona de influencia radicular a través de un sistema de tuberías y emisores.</p>
+      <p>Actualmente se han añadido varias mejoras en los emisores:</p>
+      <h4>Goteros autocompensantes:</h4>
+      <p>Estos emisores ofrecen un caudal fijo dentro de un rango más o menos amplio de presión. La utilidad de estos goteros radica en la capacidad de homogeneización del riego a lo largo de una línea de riego, ya que los últimos emisores de la línea normalmente tienen una menor presión que los primeros debido a la caída de presión por rozamiento del agua con la tubería.</p>
+      <h4>Goteros antidrenantes:</h4>
+      <p>Estos goteros se cierran automáticamente al bajar la presión en el sistema de riego, de manera que no ocurre la descarga de la tubería, lo que produce ventajas tales como evitar la entrada de aire al sistema y la bomba de riego no necesita cargar el sistema para empezar a funcionar, por tanto optimiza su uso.</p>
+      <h4>Goteros regulables:</h4>
+      <p>Permiten regular el caudal con un mando mecánico.      </p>
+      <h3>Ventajas de Riego por Goteo</h3>
+      <ul>
+        <li>Reduce de manera importante la evaporación del agua en el suelo.</li>
+        <li>Permite automatizar completamente el sistema de riego, con los consiguientes ahorros en mano de obra. El control de las dosis de aplicación es más fácil y completo.</li>
+        <li>Debido al mantenimiento de humedades altas en el bulbo realizado por los emisores, permite el uso de aguas más salinas para el riego que los sistemas de irrigación por superficie y por aspersión.</li>
+        <li>Tiene una adaptación más fácil en terrenos irregulares, rocosos o con fuertes pendientes.</li>
+        <li>Reduce la proliferación de malas hierbas en las zonas no regadas</li>
+        <li>Permite el aporte controlado de nutrientes con el agua de riego sin perdidas por lixiviación con posibilidad de modificarlos en cualquier momento del cultivo, es decir es el sistema más adaptado a la <span class="a">FERTIRRIGACIÓN</span>.</li>
+        <li> </li>
+      </ul>
+      <h3>Cultivos y Clima</h3>
+      <p>El uso de sistemas de irrigación por goteo está muy extendido en cultivos frutales, cítricos, vid y hortícolas, especialmente en zonas templadas con escasez de recursos hídricos.      </p>
+      <h3>Partes de la Instalación</h3>
+      <ul>
+        <li><strong>Grupo de bombeo:</strong> para suministrar la presión y el caudal adecuado a la instalación.</li>
+        <li><strong>Filtración</strong>: el mayor o menor grado de espesor de filtración de la misma ira relacionado con la calidad del agua, y el tamaño de la boquilla del aspersor.</li>
+        <li><strong>Sistema de abonado.</strong></li>
+        <li><strong>Red de tuberías.</strong></li>
+        <li><strong>Tuberías portaemisores:</strong> el caudal y la separación entre emisores dependerá del cultivo que se trate y de las características de suelo donde se encuentre.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>Cabezales</h3>
+      <p>Permite hacer llegar el agua a los goteros con el caudal, presión, limpieza y concentración de elementos nutrientes requeridos.</p>
+      <h4><strong>Ejemplos de Cabezales:</strong></h4>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/1_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/2_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/3_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/4_thumb.jpg" width="150" height="100"></p>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/8_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/2_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/6_thumb.jpg" width="150" height="100"><img src="../Imagenes/Imagenes (Invernaderos)/Cabezales/7_thumb.jpg" width="150" height="100"></p>
+      <h3>Tuberias</h3>
+      <p>Son las encargadas de transportar el agua con los fertilizantes.      </p>
+      <ul>
+        <li><strong>Tuberías principales</strong></li>
+        <li><strong>Tuberías Secundarias</strong></li>
+        <li><strong>y en su caso terciarias</strong></li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>Remales de Riego</h3>
+      <p>Son las tuberías portagoteros con los emisores correspondientes y que permitirán la descarga de los caudales establecidos</p>
+      <p><em>Instalamos la más amplia gama goteros que existen en la actualidad, lo que permitirá dar con la solución más adecuada a su instalación.</em>      </p>
+      <h3>Materiales Empleados</h3>
+      <ul>
+        <li>nstalación enterrada con PVC o PE y accesorios necesarios.</li>
+        <li>Instalación de tuberías de PE portaemisores y accesorios.    </li>
+      </ul>
+    </blockquote>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p><span class="footer1">El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</span></p>
+  </div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
