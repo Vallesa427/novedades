@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tecnologias Verdes</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	text-shadow: 0px 0px 0px;
+	color: #060;
+	font-size: xx-large;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	font-size: xx-large;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content blockquote #MenuBar1 li .MenuBarSubmenuVisible li a {
+	color: #F00;
+}
+.container .content blockquote #MenuBar1 li .MenuBarSubmenuVisible li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+.container .content blockquote h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+	color: #00F;
+}
+.container .content blockquote p {
+	color: #000;
+	font-weight: bold;
+	font-size: larger;
+}
+.A {
+	color: #060;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+}
+.A {
+	color: #060;
+}
+.container .content blockquote p {
+	color: #000;
+	font-weight: normal;
+	font-size: 16px;
+}
+.container .content blockquote h1 img {
+	text-align: center;
+}
+-->
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">TENEMOS LO QUE NECISITAS<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <h1><img src="Imagenes/metaliser-logo.png" alt="" width="207" height="114">  TECNOLOGÍAS VERDES</h1>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a class="MenuBarItemSubmenu" href="#">INVERNADEROS</a>
+          <ul>
+            <li><a href="Tipos de Invernaderos/Asimetrico.html">Tipos de Invernaderos</a></li>
+            <li><a href="Servicios de Invernaderos/Diseño.html">Servicios de Invernaderos</a></li>
+            <li><a href="Estructura y Materiales/Estructuras.html">Estructuras y Materiales</a></li>
+            <li><a href="Invernaderos por Cultivos/Hortalizas.html">Invernaderos por Cultivos</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">RIEGO</a>
+          <ul>
+            <li><a href="Sistemas de Riego/Por Goteo.html">Sistemas de Riego</a></li>
+            <li><a href="Servicios/Diseño de Invernaderos.html">Servicos de Riego</a></li>
+            <li><a href="Materiales de Riego/Cabezales.html">Materiales de Riego</a></li>
+          </ul>
+        </li>
+        <li><a class="MenuBarItemSubmenu" href="#">TECNOLOG&Iacute;AS</a>
+          <ul>
+            <li><a href="Climatización/controlador climatico.html">Climatizaci&oacute;n</a></li>
+            <li><a href="Climatización/sublimador de Azufre.html">Fitosanitarios</a></li>
+            <li><a href="Climatización/Mesa de Cultivos.html">Complementos</a></li>
+            <li><a href="Climatización/Agronómico.html">Asesoramientos</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="MenuBarItemSubmenu">AGUA</a>
+          <ul>
+            <li><a href="Climatización/Porabilización.html">Potabilizaci&oacute;n</a></li>
+            <li><a href="Climatización/Potabilización Movi.html">Potabilizaci&oacute;n Movil</a></li>
+            <li><a href="Climatización/Depuración.html">Depuraci&oacute;n</a></li>
+            <li><a href="Climatización/Tratamiento Ultravioleta.html">Reutilizaci&oacute;n</a></li>
+            <li><a href="Climatización/Aguas Grises.html">Aguas Grises</a></li>
+          </ul>
+        </li>
+        <li><a href="Contacto.html">CONTACTO</a></li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p style="font-size: 18px; color: #060; font-weight: bold;">INVERNADEROS DISEÑADOS PARA GARANTIZAR EL ÉXITO DE SUS CULTIVOS.<br>
+      </p>
+      <p><img src="Imagenes/banner-invernaderos.png" width="850" height="200"></p>
+      <p>&nbsp;</p>
+      <p>Usted contará con un <strong>verdadero servicio post-venta</strong> con el valor agregado de nuestra <strong>EXPERIENCIA</strong> y <strong>REACTIVIDAD</strong> para mantener su inversión en óptimo estado.</p>
+      <ul>
+        <li> Stock permanente en los plásticos, equipos, refacciones y accesorios de mayor rotación.</li>
+        <li> Personal capacitado para dar asesoría especializada.</li>
+        <li>Pólizas de mantenimientos preventivos y correctivos.</li>
+      </ul>  
+      <br>
+      <h1>Nuestros Modelos</h1>
+      <p style="font-family: 'Times New Roman', Times, serif; font-weight: normal; font-size: 16px; color: #000;"><strong>Ideal para climas templados. Combina el estilo tradicional con las más avanzadas tecnologías </strong>generando el microclima adecuado para cualquier tipo de cultivo.      </p>
+      <ul>
+        <li>• Diseño fuerte y aerodinámico.</li>
+        <li>• Fácil instalación.</li>
+        <li>• Mantenimiento sencillo.</li>
+        <li>• Excelente ventilación y luminosidad dentro del invernadero.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3 style="font-size: 18px; color: #00F;">¿Por qué Novedades Agrícolas?</h3>
+      <p>Novedades Agrícolas, diseña, fabrica, construye e instala todo tipo de estructuras de invernaderos tecnológicamente eficientes, modernas, y funcionales, destinadas a la agricultura intensiva, que ponemos a disposición de nuestros clientes para su inmediata puesta en marcha.</p>
+      <p>Por otro lado, Novedades Agrícolas es la empresa de mercado que ofrece un servicio más completo en este tipo de instalaciones ya que contamos con marcas propias en Invernaderos (APR), Riego (XILEMA®), Control Climático (CLIMATEC®), Tratamientos fitosanitarios (HUMIFITO®), todo esto unido a 40 años de experiencia.&nbsp;      </p>
+      <p>&nbsp;</p>
+      <h2>Servicios</h2>
+      <blockquote>
+        <p><a href="Tipos de Invernaderos/Asimetrico.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/inver2.jpg" width="250" height="200"></a><a href="Sistemas de Riego/Por Goteo.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/riego2.jpg" width="250" height="200"></a><a href="Climatización/Porabilización.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/agua2.jpg" width="250" height="200"></a></p>
+        <p><a href="Climatización/controlador climatico.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/clima2.jpg" width="250" height="200"></a><a href="Climatización/Agronómico.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/asesoramiento.jpg" width="250" height="200"></a><a href="Climatización/Mesa de Cultivos.html"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/compl2.jpg" width="250" height="200"></a></p>
+      </blockquote>
+      <p>&nbsp;</p>
+      <h2>Marcas      </h2>
+      <blockquote>
+        <p><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/APR-invernaderos-greenhouses.jpg" width="150" height="150"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/XILEMA-fertirrigacion-fertigation.jpg" width="150" height="150"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/CLIMATEC-Clima-climate-control.jpg" width="150" height="150"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/HUMIFITO-Humedad-Fitosanitario.jpg" width="150" height="150"><img src="Imagenes/Imagenes (Invernaderos)/Nueva carpeta/SMAQUA-Tratamiento-Agua.jpg" width="150" height="150"></p>
+      </blockquote>
+    </blockquote>
+  <!-- end .content --></div>
+  <div class="footer">
+    <p style="font-size: 16px; color: #FFF; font-family: 'Times New Roman', Times, serif;">El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</p>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
