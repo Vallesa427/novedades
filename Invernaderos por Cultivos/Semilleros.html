@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Semilleros</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #ADB96E;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .header {
+	font-weight: bold;
+	background-color: #FFF;
+}
+.container .header {
+	font-size: xx-large;
+	color: #FFF;
+	background-color: #060;
+}
+.container .content blockquote blockquote h3 {
+	color: #00F;
+}
+.container .content blockquote h3 {
+	color: #00F;
+	font-family: "Times New Roman", Times, serif;
+}
+.container .footer div {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .footer div {
+	color: #FFF;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><!-- end .header -->Tecnologías Verdes</div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Cultivos por Invernaderos</a>
+          <ul>
+            <li><a href="Hortalizas.html">Hortalizas</a></li>
+            <li><a href="Flores.html">Flores</a></li>
+            <li><a href="Hidroponicos.html">Hidrop&oacute;nicos</a></li>
+            <li><a href="Para Viveros.html">para Viveros</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Invernaderos para Semilleros</h1>
+      <p><img src="../Imagenes/Imagenes (Invernaderos)/semilleros.jpg" width="850" height="250"></p>
+      <blockquote>
+        <p>Un<strong> semillero</strong> es un sitio donde se realiza la siembran de los <strong>cultivos hortícolas</strong>. Es un área de terreno preparado y acondicionado especialmente para colocar las <strong>semillas</strong> con la finalidad de producir su germinación con las mejores condiciones y cuidados, a objeto de que pueda crecer sin dificultad hasta que la planta esté lista para el trasplante.</p>
+        <p>Normalmente los semilleros constan de<strong> invernaderos</strong> de producción de planta debido a que los requerimientos climáticos son elevados en los primeros estadíos de desarrollo de los cultivos hortícolas, por lo que el <strong>control del clima</strong> resulta imprescindible en este tipo de producciones.</p>
+        <h3>Un semillero se divide en las siguientes zonas:<br>
+        </h3>
+      </blockquote>
+      <h4>Zona de siembra.</h4>
+      <p>Normalmente ubicada en un almacén, es donde se realiza la operación de sembrado mediante maquinaria automatizada o a mano.</p>
+      <h4>Cámaras de germinación.</h4>
+      <p>Son cámaras que se acondicionan para la germinación de las semillas.</p>
+      <h4>Invernadero de producción.</h4>
+      <p>Una vez germinada, las plántulas pasan al invernadero de producción, donde se desarrollan hasta que adquieren las condiciones para su trasplante.</p>
+      <h4>Zonas de aclimatación.</h4>
+      <p>Se trata de una superficie cuya finalidad es la de preparar las plántulas para las condiciones de campo a las que se verán sometidas. Puede realizarse en el mismo invernadero de producción o en invernaderos de malla adyacentes a este.      </p>
+      <h3>Invernaderos para Semilleros</h3>
+      <p>El tipo de invernaderos recomendados para los semilleros son de tipo multitúnel, en sus variantes:</p>
+      <ul>
+        <li>Gótico</li>
+        <li>Asimétrico</li>
+        <li>Capilla</li>
+      </ul>
+    
+      <p>&nbsp;</p>
+      <p>Ya que las condiciones de radiación, temperatura y humedad relativa deben de controlarse de forma óptima para generar la mejor condición climática posible para el desarrollo de las plántulas, y estos invernaderos proporcionan las mejores características para ello:</p>
+      <ul>
+        <li>Gran volumen de aire.</li>
+        <li>Permite realizar labores agrícolas mecanizadas en su interior.</li>
+        <li>Buena ventilación.</li>
+        <li>Elevada estanqueidad.</li>
+        <li>Permite la instalación de ventilación cenital, así como ventilación perimetral e instalaciones de ventilación forzada.</li>
+        <li>Buen reparto de la luminosidad en el interior del invernadero.    </li>
+      </ul>
+      <p>&nbsp;</p>
+      <h3>Tecnología Asociada</h3>
+      <h4>Sistema de producción:</h4>
+      <p>Se siembra sobre sustratos en bandejas de alveolos tronco piramidales, cónicos o tubulares, que facilitan la manutención y el transplante de las plántulas.</p>
+      <h4>Sistemas de refrigeración:</h4>
+      <p>Pantallas térmicas y de sombreo, ventilación forzada, cooling systems y fog system.</p>
+      <h4>Sistemas de calefacción:</h4>
+      <p>Sistemas cerrados de tuberías con agua caliente o sistemas por aire caliente. Preferiblemente colocados bajo las bandejas de plantación con objetivo de elevar la temperatura ambiente de las raíces.</p>
+      <h4>Sistemas de riego:</h4>
+      <p>Suelen utilizarse carros de riego o sistemas de aspersión o microaspersión invertida. (poner fotos de carro de riego)</p>
+      <h4>Sistemas de rail deslizable:</h4>
+      <p>Utilizado cuando se siembra en bandeja, actúan como mesa de cultivo (sin fondo), a la vez que ayuda en el trabajo ya que las bandejas se deslizan fácilmente sobre ellos.      </p>
+    </blockquote>
+    <!-- end .content --></div>
+  <div class="footer">
+    <div>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.    <!-- end .footer --></div>
+  </div>
+  <!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

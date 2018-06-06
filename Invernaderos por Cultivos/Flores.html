@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flores</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor de anchura fija rodea a las demás divs ~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+/* ~~ no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado ~~ */
+.header {
+	background-color: #006600;
+	font-family: "Times New Roman", Times, serif;
+	font-size: xx-large;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+
+.content {
+	padding: 10px 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #006600;
+	color: #FFF;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .content blockquote h3 {
+	color: #00F;
+}
+.container .footer div div div div {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .content blockquote h1 {
+	color: #060;
+}
+.container .content blockquote #MenuBar1 li a {
+	color: #FFF;
+	background-color: #060;
+	text-shadow: 1px 1px 1px #060;
+	font-style: italic;
+}
+-->
+</style>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">Tecnologías Verdes<!-- end .header --></div>
+  <div class="content">
+    <blockquote>
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="../Pagina Principal1.html">Pagina Principal</a></li>
+        <li><a class="MenuBarItemSubmenu" href="#">Invernaderos por Cultivos</a>
+          <ul>
+            <li><a href="Hortalizas.html">Hortalizas</a></li>
+<li><a href="Hidroponicos.html">Hidrop&oacute;nicos</a></li>
+            <li><a href="Semilleros.html">Semilleros</a></li>
+            <li><a href="Para Viveros.html">para Viveros</a></li>
+          </ul>
+        </li>
+</ul>
+      <h1>&nbsp;</h1>
+      <h1>Invernaderos de Flores</h1>
+      <p><img src="../Imagenes/ICONOS/invernadero-flores-apr.jpg" width="850" height="250"></p>
+      <blockquote>
+        <p>El <strong>cultivo de flores</strong> es de los que mayores <strong>demandas climáticas</strong> requieren para su producción ya que la producción de flores exige de temperaturas concretas y un determinado fotoperiodo dependiendo de la especie que se cultive.</p>
+      </blockquote>
+      <p>Así podemos encontrar, dependiendo del tipo de cultivo y la zona donde se establezca, los diferentes tipos de producción en cuanto a los requerimientos climáticos necesarios son:</p>
+      <h3>Cultivo en Invernaderos Multitunel</h3>
+      <p>Los cultivos de flores exigentes en cuanto al clima para su producción requieren de invernaderos mucho más tecnificados:</p>
+      <ul>
+        <li>Sistemas de Ventilación Forzada</li>
+        <li>Pantallas de Sombreo y Sistemas de Iluminación Artificial para controlar el Fotoperiodo</li>
+        <li>Sistemas de Producción Hidropónicos.</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>Los invernaderos utilizados en este tipo de producción son invernaderos mucho más estancos que los otros tipos y permiten un mejor control del clima:</p>
+      <ul>
+        <li>Capilla</li>
+        <li>Gótico</li>
+        <li>Asimétrico o tropical&nbsp;</li>
+      </ul>
+    
+      <p>&nbsp;</p>
+      <h3>Cultivo en Invernaderos Tradicionales</h3>
+      <p>Este tipo de cultivo se da cuando las condiciones ambientales no son favorables para el cultivo en determinados periodos, donde lo que se busca es mantener una determinada temperatura nocturna superior a la que proporciona el clima en verano y mantener temperaturas elevadas en invierno, por lo que son invernaderos abiertos, con ventilación natural.</p>
+      <h4>Suelen ser:</h4>
+      <ul>
+        <li>Invernaderos tipo parral o plano</li>
+        <li>Túnel</li>
+        <li>“Raspa y amagado”.&nbsp;</li>
+      </ul>
+    
+      <p>&nbsp;</p>
+      <h3>Cultivo en Invernaderos de malla</h3>
+      <p>El cultivo bajo Invernaderos de Malla tiene su utilidad en zonas cuyo clima resulta óptimo para el<strong> Cultivo de Flores</strong>, ya que su función es la protección contra inclemencias meteorológicas como el viento o el granizo además de adelantar las cosechas por el microclima generado en su interior.</p>
+      <p>&nbsp;</p>
+      <h3>¿Qué Invernadero es el más Idoneo?</h3>
+      <p>Desde el punto de vista técnico resultan más convenientes las instalaciones de invernaderos de<strong> tipo multitúnel</strong> para la producción de flores, ya que permiten el control exhaustivo de los parámetros climáticos, y favorecen el buen control de las plagas y enfermedades.</p>
+      <p>&nbsp;</p>
+      <h3>Sistema Productivo</h3>
+      <p>Dependiendo del tipo de presentación en la que se cultivan las flores (flor cortada o planta en maceta), contaremos con los siguientes sistemas:</p>
+      <h4>Cultivo de flor cortada</h4>
+      <ul>
+        <li><strong>Cultivo en suelo</strong>: plantaciones realizadas en el suelo. Este tipo de cultivo, a la larga, conlleva problemas de enfermedades en la raíz debido a la producción continuada de la misma especie en una superficie concreta.</li>
+        <li><strong>Cultivo en sacos o contenedores de sustrato:</strong> elimina el problema del agotamiento de suelos, ya que, dependiendo del tipo de sustrato utilizado, pueden realizarse labores de limpieza del sustrato.</li>
+        <li><strong>Cultivo en bandejas:</strong> normalmente producido para la producción de planta a través de esquejes.</li>
+      </ul>
+      <h4>&nbsp;</h4>
+      <h4>Cultivo de plantas en maceta</h4>
+      <ul>
+        <li><strong>Cultivo en maceta:</strong> se produce el cultivo en el recipiente final de venta.     </li>
+      </ul>
+    </blockquote>
+  <!-- end .content --></div>
+  <div class="footer">
+    <div>
+      <div>
+        <div itemprop="articleBody">
+          <div>El diseño y la estructura de los invernaderos desarrollados en Novedades Agrícolas cumplen con la normativa europea <strong>UNE-EN 13031-1</strong>, según los requisitos de las normas <strong>ISO 9001</strong> y <strong>14001</strong> con las que Novedades Agrícolas está certificada desde el año 2000.</div>
+        </div>
+      </div>
+      <div><br>
+    </div>
+    <!-- end .footer --></div>
+  </div>
+<!-- end .container --></div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
